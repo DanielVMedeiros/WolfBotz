@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "robo-sumo",
+    "slug": "robo-sumo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/(tabs)/WolfBotz.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.danvm.robosumo",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage":"./app/(tabs)/WolfBotz.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.danvm.robosumo"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./app/(tabs)/WolfBotz.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./app/(tabs)/WolfBotz.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "2bf0ed57-ef9d-40e5-ad03-172c8fd1c637"
+      }
+    }
+  }
+}
